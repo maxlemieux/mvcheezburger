@@ -12,4 +12,4 @@ A cheezburger that has been devoured may again be available in the future!
 ## Demo
 A demo of the app can be found here:
 
-[https://intense-crag-71749.herokuapp.com/](https://intense-crag-71749.herokuapp.com/)
+[https://mvcheezburger.herokuapp.com/](https://mvcheezburger.herokuapp.com/)

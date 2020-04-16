@@ -1,17 +1,13 @@
 const express = require("express");
-
 const router = express.Router();
 
-// Import the model (cat.js) to use its database functions.
 const burger = require("../models/burger.js");
 
-// Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
   burger.all(function(data) {
     var hbsObject = {
       burgers: data
     };
-    console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
@@ -34,7 +30,6 @@ router.put("/api/burgers/:id", function(req, res) {
   const objColVals = {
     devoured: req.body.devoured
   };
-  console.log(req.body);
   burger.update(objColVals, conditionObj, function(result) {
       if (result.changedRows === 0) {
         // If no rows were changed, then the ID must not exist, so 404
@@ -45,5 +40,4 @@ router.put("/api/burgers/:id", function(req, res) {
   );
 });
 
-// Export routes for server.js to use.
 module.exports = router;

@@ -1,10 +1,9 @@
-// Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
   $(".change-devoured").on("click", function(event) {
-    var id = $(this).data("id");
-    var newDevoured = $(this).data("newdevoured");
+    const id = $(this).data("id");
+    const newDevoured = $(this).data("newdevoured");
 
-    var newDevouredState = {
+    const newDevouredState = {
       devoured: newDevoured
     };
 
@@ -14,7 +13,6 @@ $(function() {
       data: newDevouredState
     }).then(
       function() {
-        console.log("changed devoured to", newDevoured);
         // Reload the page to get the updated list
         location.reload();
       }
@@ -22,10 +20,9 @@ $(function() {
   });
 
   $(".create-form").on("submit", function(event) {
-    // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
-    var newBurger = {
+    const newBurger = {
       burger_name: $("#burger").val().trim(),
       devoured: $("[name=devoured]:checked").val().trim()
     };
@@ -36,7 +33,6 @@ $(function() {
       data: newBurger
     }).then(
       function() {
-        console.log("created new burger");
         // Reload the page to get the updated list
         location.reload();
       }

@@ -17,11 +17,11 @@ router.get("/", (req, res) => {
 /* New Burger */
 router.post("/api/burgers", (req, res) => {
   const { burger_name, devoured } = req.body;
-  const newBurgerObj = {
+  const newBurger = {
     burger_name, 
     devoured
   };
-  burger.create(newBurgerObj, result => {
+  burger.create(newBurger, result => {
     // Send back the ID of the new burger
     res.json({ id: result.insertId });
   });

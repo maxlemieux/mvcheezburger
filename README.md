@@ -1,5 +1,16 @@
 # mvcheezburger
-A cheezburger tracking app performed in Node/Express/MySQL/Handlebars.
+![dependencies status](https://img.shields.io/david/maxlemieux/node-employee-db?style=for-the-badge)
+![code size](https://img.shields.io/github/languages/code-size/maxlemieux/node-employee-db?style=for-the-badge)
+
+## Table of Contents
+* [About](#about)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Demo](#demo)
+* [Technologies](#technologies)
+
+## About
+A cheezburger tracking app, created with Node/Express/MySQL/Handlebars.
 
 Sometimes, we have cheezburgers. 
 
@@ -11,3 +22,9 @@ mvcheezburger is a way to help track where your cheezburgers have been and will 
 A demo of the app can be found here:
 
 [https://mvcheezburger.herokuapp.com/](https://mvcheezburger.herokuapp.com/)
+
+## Technologies
+* Node.js
+* Express.js
+* MySQL
+* Handlebars.js

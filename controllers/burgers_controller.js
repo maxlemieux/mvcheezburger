@@ -3,27 +3,30 @@ const router = express.Router();
 
 const burger = require("../models/burger.js");
 
-router.get("/", function(req, res) {
-  burger.all(function(data) {
-    var hbsObject = {
-      burgers: data
+/* All Burgers */
+router.get("/", (req, res) => {
+  burger.all(burgers => {
+    const allBurgers = {
+      burgers
     };
-    res.render("index", hbsObject);
+    res.render("index", allBurgers);
   });
 });
 
-router.post("/api/burgers", function(req, res) {
+/* New Burger */
+router.post("/api/burgers", (req, res) => {
+  const { burger_name, devoured } = req.body;
   const newBurgerObj = {
-    burger_name: req.body.burger_name, 
-    devoured: req.body.devoured
+    burger_name, 
+    devoured
   };
-  burger.create(newBurgerObj, function(result) {
+  burger.create(newBurgerObj, result => {
     // Send back the ID of the new burger
     res.json({ id: result.insertId });
   });
 });
 
-router.put("/api/burgers/:id", function(req, res) {
+router.put("/api/burgers/:id", (req, res) => {
   const conditionObj = {
     id: req.params.id
   };

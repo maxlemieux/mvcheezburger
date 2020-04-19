@@ -8,7 +8,7 @@
 
 <div class="container">
   <div class="item burger-tray top-box left-box">
-    <h2 class="tray-title">Cheezburgers remaining</h2>
+    <h2>Cheezburgers remaining</h2>
     <ul>
       {{#unless burgers}}
       <li><p>There are no burgers yet! Time to place an order...</p></li>
@@ -21,7 +21,7 @@
     </ul>
   </div>
   <div class="item burger-tray">
-    <h2 class="tray-title">Echoes of cheezburgers past</h2>
+    <h2>Echoes of cheezburgers past</h2>
     <ul>
       {{#unless burgers}}
       <li>No devoured yet</li>
@@ -42,8 +42,10 @@
 <div class="container">
   <form class="create-form">
     <div class="form-group">
-      <label for="burger">Order a Burger:</label>
-      <input type="text" id="burger" name="burger_name">
+      {{!-- <label for="burger">Order a Burger:</label> --}}
+      {{!-- <input type="text" id="burger" name="burger_name" placeholder="Enter your order here"> --}}
+
+      <textarea id="burger" name="burger_name" placeholder="Enter your order here" rows="1"></textarea>
     </div>
 
     <button type="submit">Place Order</button>

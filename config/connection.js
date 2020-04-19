@@ -1,9 +1,9 @@
 const mysql = require('mysql');
 const sqlLocalDb = {
-  host: 'localhost',
+  host: process.env.DB_HOST,
   port: 3306,
-  user: 'root',
-  password: 'PASSWORD',
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
   database: 'burgers_db'
 };
 const connection = mysql.createConnection(process.env.JAWSDB_URL || sqlLocalDb);

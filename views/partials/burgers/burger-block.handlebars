@@ -5,11 +5,9 @@
 	<i>{{burger_name}}</i>
 	{{/if}}
 	<br>
-	
 	<img {{#unless devoured}}class="devoured"{{/unless}} src="assets/img/burger_avatar.png" width="50px">
-	
-{{#if devoured}}
-<br>
+	{{#if devoured}}
+	<br>
 	<button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
 		DEVOUR ME!
 	</button>

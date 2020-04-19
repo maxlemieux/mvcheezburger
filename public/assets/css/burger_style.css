@@ -9,6 +9,11 @@ button {
   height: 30px;
 }
 
+footer {
+  font-size: small;
+  margin: auto;
+}
+
 form {
   width: 100%;
   margin: auto;
@@ -53,6 +58,7 @@ textarea {
 .item {
   margin: 0px 20px 0px 0px;
   flex-grow: 1;
+  flex-basis: 0;
 }
 
 .burger {

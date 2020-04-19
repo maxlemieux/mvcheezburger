@@ -21,26 +21,32 @@ mvcheezburger is a way to help track where your cheezburgers have been and will 
 ## Installation
 
 Clone the repo:
+
 `git clone https://github.com/maxlemieux/mvcheezburger.git`
 
 Install the dependencies (node, express, mysql, node-handlebars, dotenv):
+
 `cd mvcheezburger`
 `npm i`
 
 Create a file for your database connection information:
+
 `touch .env`
 
 Open the file `.env` with your favorite editor and add the connection information:
-`DB_HOST=localhost`
-`DB_USER=root`
-`DB_PASS=password`
+
+`DB_HOST=localhost
+DB_USER=root
+DB_PASS=password`
 
 Create the database using MySQL Workbench by running the following schema:
+
 `mvcheezburger/db/schema.sql`
 
 ## Usage
 
 Start the server:
+
 `npm start`
 
 Load the app at [http://localhost:3000](http://localhost:3000).

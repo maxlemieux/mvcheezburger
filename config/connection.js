@@ -1,6 +1,6 @@
 const mysql = require('mysql');
 
-const sqlLocalDb = {
+const localDb = {
   host: process.env.DB_HOST,
   port: 3306,
   user: process.env.DB_USER,
@@ -8,7 +8,7 @@ const sqlLocalDb = {
   database: 'burgers_db'
 };
 
-const connection = mysql.createConnection(process.env.JAWSDB_URL || sqlLocalDb);
+const connection = mysql.createConnection(process.env.JAWSDB_URL || localDb);
 
 connection.connect(err => {
   if (err) {

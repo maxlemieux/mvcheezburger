@@ -31,11 +31,6 @@ $(function() {
     $.ajax("/api/burgers", {
       type: "POST",
       data: newBurger
-    }).then(
-      function() {
-        // Reload the page to get the updated list
-        location.reload();
-      }
-    );
+    }).then( () => location.reload());
   });
 });

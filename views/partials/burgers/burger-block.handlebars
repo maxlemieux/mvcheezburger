@@ -1,6 +1,10 @@
-<li>
+<li class="burger">
 	{{burger_name}}
+	<br>
+	<img src="assets/img/burger_avatar.png" width="50px">
+	
 {{#if devoured}}
+<br>
 	<button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
 		DEVOUR ME!
 	</button>

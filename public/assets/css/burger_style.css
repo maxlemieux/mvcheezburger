@@ -17,6 +17,10 @@ h2 {
   font-size: 18px;
 }
 
+i {
+  font-style: italic;
+}
+
 li {
   padding: 5px;
   margin: 5px;
@@ -43,13 +47,13 @@ li {
 }
 
 .item {
-  margin: 0px 20px 0px 20px;
+  margin: 0px 20px 0px 0px;
 }
 
 .burger {
   background: #faebd7;
-  border-radius: 15px;
-  border: 2px solid black;
+  /* border-radius: 15px; */
+  border: 1px solid black;
   padding: 10px;
 }
 
@@ -57,5 +61,10 @@ li {
   background-color: #FF9999;
   border-radius: 25px;
   border: 2px solid #CC0000;
+  box-shadow: inset 5px 5px 5px gray;
   padding: 20px;
+}
+
+.devoured {
+  opacity: 0.5;
 }

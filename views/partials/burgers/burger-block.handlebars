@@ -1,7 +1,12 @@
 <li class="burger">
+	{{#if devoured}}
 	{{burger_name}}
+	{{else}}
+	<i>{{burger_name}}</i>
+	{{/if}}
 	<br>
-	<img src="assets/img/burger_avatar.png" width="50px">
+	
+	<img {{#unless devoured}}class="devoured"{{/unless}} src="assets/img/burger_avatar.png" width="50px">
 	
 {{#if devoured}}
 <br>

@@ -27,6 +27,7 @@ Clone the repo:
 Install the dependencies (node, express, mysql, node-handlebars, dotenv):
 
 `cd mvcheezburger`
+
 `npm i`
 
 Create a file for your database connection information:

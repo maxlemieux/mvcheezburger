@@ -1,6 +1,6 @@
 # mvcheezburger
-![dependencies status](https://img.shields.io/david/maxlemieux/node-employee-db?style=for-the-badge)
-![code size](https://img.shields.io/github/languages/code-size/maxlemieux/node-employee-db?style=for-the-badge)
+![dependencies status](https://img.shields.io/david/maxlemieux/mvcheezburger?style=for-the-badge)
+![code size](https://img.shields.io/github/languages/code-size/maxlemieux/mvcheezburger?style=for-the-badge)
 
 ## Table of Contents
 * [About](#about)

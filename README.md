@@ -68,3 +68,4 @@ A demo of the app can be found here:
 * Express.js
 * MySQL
 * Handlebars.js
+* ![alt text](https://i.chzbgr.com/full/875511040/h8EB4D6E9/famous-cat-meme-which-started-and-launched-the-website-i-can-haz-cheezburger "Logo Title Text 1")

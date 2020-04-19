@@ -36,7 +36,9 @@ Create a file for your database connection information:
 Open the file `.env` with your favorite editor and add the connection information:
 
 `DB_HOST=localhost
+
 DB_USER=root
+
 DB_PASS=password`
 
 Create the database using MySQL Workbench by running the following schema:
